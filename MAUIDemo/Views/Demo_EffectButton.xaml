@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUIDemo.Views.Demo_EffectButton"
+             xmlns:local="clr-namespace:MAUIDemo.Controls"
+             Title="Demo_EffectButton">
+    <StackLayout>
+        <local:ContentButton >
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="CommonStates">
+                    <VisualState x:Name="Normal">
+                        <VisualState.Setters>
+                            <Setter Property="Scale" Value="1" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="Pressed">
+                        <VisualState.Setters>
+                            <Setter Property="Scale" Value="0.9" />
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+            <local:ContentButton.Content>
+                <!--must set background color-->
+                <Grid BackgroundColor="Transparent">
+                    <Border StrokeThickness="4"
+                    StrokeShape="RoundRectangle 40,0,0,40"
+                    Background="#2B0B98"
+                    Padding="16,8"
+                    HorizontalOptions="Center">
+                        <Border.Stroke>
+                            <LinearGradientBrush EndPoint="0,1">
+                                <GradientStop Color="Orange"
+                          Offset="0.1" />
+                                <GradientStop Color="Brown"
+                          Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Border.Stroke>
+                        <Label x:Name="lbText" Text="Effect Button"
+                       TextColor="White"
+                       FontSize="18"
+                       FontAttributes="Bold" />
+                    </Border>
+                </Grid>
+            </local:ContentButton.Content>
+        </local:ContentButton>
+    </StackLayout>
+</ContentPage>

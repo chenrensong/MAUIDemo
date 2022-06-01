@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUIDemo.Views.Demo_StackLayout"
+             Title="Demo_StackLayout">
+    <VerticalStackLayout>
+        <!-- Header -->
+        <Label Text="HEADER"
+               FontSize="18"
+               BackgroundColor="Aqua"
+               HorizontalTextAlignment="Center" />
+        <HorizontalStackLayout HeightRequest="500">
+            <!-- Navigation items-->
+            <BoxView  Grid.Column="0" WidthRequest="50"
+                     Color="Blue" />
+            <!-- Content -->
+            <Label Text="CONTENT" HeightRequest="500" WidthRequest="500"
+                   FontSize="18" Grid.Row="1" Grid.Column="1"
+                   BackgroundColor="Gray"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" />
+            <!-- Aside items -->
+            <BoxView Grid.Row="1"  WidthRequest="50"
+                     Color="Green" />
+        </HorizontalStackLayout>
+        <!-- Footer -->
+        <Label Text="FOOTER" Grid.Row="2" Grid.ColumnSpan="3"
+                FontSize="18"
+               BackgroundColor="Pink"
+               HorizontalTextAlignment="Center" />
+    </VerticalStackLayout>
+</ContentPage>

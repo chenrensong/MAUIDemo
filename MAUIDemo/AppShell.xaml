@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MAUIDemo.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MAUIDemo"
+    xmlns:view="clr-namespace:MAUIDemo.Views"
+    Shell.FlyoutBehavior="Flyout">
+    <FlyoutItem Title="Home"
+                Icon="{FontImage &#xf015;,Color=Blue, FontFamily=fontawesome, Size=44}">
+        <Tab>
+            <ShellContent Title="Home"
+                          ContentTemplate="{DataTemplate local:MainPage}"
+                          Route="MainPage" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Demo_StackLayout"
+                Icon="{FontImage &#xf02b;,Color=Blue, FontFamily=fontawesome, Size=44}">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate view:Demo_StackLayout}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Demo_AbsoluteLayout"
+                Icon="{FontImage &#xf02b;,Color=Blue, FontFamily=fontawesome, Size=44}">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate view:Demo_AbsoluteLayout}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Demo_FlexLayout"
+                Icon="{FontImage &#xf02b;,Color=Blue, FontFamily=fontawesome, Size=44}">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate view:Demo_FlexLayout}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Demo_Grid"
+                Icon="{FontImage &#xf02b;,Color=Blue, FontFamily=fontawesome, Size=44}">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate view:Demo_Grid}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Demo_HslColor"
+                Icon="{FontImage &#xf02b;,Color=Blue, FontFamily=fontawesome, Size=44}">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate view:Demo_HslColor}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Demo_LightColor"
+                Icon="{FontImage &#xf02b;,Color=Blue, FontFamily=fontawesome, Size=44}">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate view:Demo_LightColor}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Demo_FontAwesome"
+                Icon="{FontImage &#xf02b;,Color=Blue, FontFamily=fontawesome, Size=44}">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate view:Demo_FontAwesome}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Demo_CustomButton"
+                Icon="{FontImage &#xf02b;,Color=Blue, FontFamily=fontawesome, Size=44}">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate view:Demo_CustomButton}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Demo_EffectButton"
+                Icon="{FontImage &#xf02b;,Color=Blue, FontFamily=fontawesome, Size=44}">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate view:Demo_EffectButton}" />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Demo_ImageButton"
+                Icon="{FontImage &#xf02b;,Color=Blue, FontFamily=fontawesome, Size=44}">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate view:Demo_ImageButton}" />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Demo_HttpServer"
+                Icon="{FontImage &#xf02b;,Color=Blue, FontFamily=fontawesome, Size=44}">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate view:Demo_HttpServer}" />
+        </Tab>
+    </FlyoutItem>
+
+
+</Shell>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUIDemo.Views.Demo_LightColor"
+             xmlns:local="clr-namespace:MAUIDemo.Extensions"
+             Title="Demo_LightColor">
+    <ContentPage.Resources>
+        <Style TargetType="BoxView">
+            <Setter Property="WidthRequest" Value="80" />
+            <Setter Property="HeightRequest" Value="80" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="VerticalOptions" Value="Center" />
+        </Style>
+    </ContentPage.Resources>
+    <HorizontalStackLayout Margin="10">
+        <VerticalStackLayout>
+            <BoxView Color="Red" />
+            <BoxView Color="{local:LightColorExtension SrcColor=Red}" />
+        </VerticalStackLayout>
+        <VerticalStackLayout>
+            <BoxView Color="Orange" />
+            <BoxView Color="{local:LightColorExtension SrcColor=Orange}" />
+        </VerticalStackLayout>
+        <VerticalStackLayout>
+            <BoxView Color="Yellow" />
+            <BoxView Color="{local:LightColorExtension SrcColor=Yellow}" />
+        </VerticalStackLayout>
+        <VerticalStackLayout>
+            <BoxView Color="Green" />
+            <BoxView Color="{local:LightColorExtension SrcColor=Green}" />
+        </VerticalStackLayout>
+        <VerticalStackLayout>
+            <BoxView Color="Blue" />
+            <BoxView Color="{local:LightColorExtension SrcColor=Blue}" />
+        </VerticalStackLayout>
+        <VerticalStackLayout>
+            <BoxView Color="Indigo" />
+            <BoxView Color="{local:LightColorExtension SrcColor=Indigo}" />
+        </VerticalStackLayout>
+        <VerticalStackLayout>
+            <BoxView Color="Purple" />
+            <BoxView Color="{local:LightColorExtension SrcColor=Purple}" />
+        </VerticalStackLayout>
+    </HorizontalStackLayout>
+</ContentPage>

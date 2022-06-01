@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<local:ContentButton xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MAUIDemo.Controls"
+             x:Name="control"
+             x:Class="MAUIDemo.Controls.ImageButton">
+    <local:ContentButton.Resources>
+        <FileImageSourceConverter x:Key="ImgConverter"/>
+    </local:ContentButton.Resources>
+    <VisualStateManager.VisualStateGroups>
+        <VisualStateGroup x:Name="CommonStates">
+            <VisualState x:Name="Normal">
+                <VisualState.Setters>
+                </VisualState.Setters>
+            </VisualState>
+            <VisualState x:Name="Pressed">
+                <VisualState.Setters>
+                    <Setter TargetName="PressedImageControl"  Property="Image.IsVisible" Value="true" />
+                    <Setter TargetName="NormalImageControl"  Property="Image.IsVisible" Value="false" />
+                </VisualState.Setters>
+            </VisualState>
+        </VisualStateGroup>
+    </VisualStateManager.VisualStateGroups>
+    <local:ContentButton.Content>
+        <Grid x:Name="ButtonBackground" BackgroundColor="Transparent">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid>
+                <Image x:Name="DisabledImageControl" IsVisible="false"
+                       Source="{Binding DisabledImage,Source={x:Reference control}}"
+                        Aspect="{Binding Aspect,Source={x:Reference control}}" />
+                <Image x:Name="PressedImageControl" IsVisible="false" 
+                       Source="{Binding PressedImage,Source={x:Reference control}}"      
+                       Aspect="{Binding Aspect,Source={x:Reference control}}" />
+                <Image x:Name="NormalImageControl"
+                       Source="{x:Binding NormalImage,Source={x:Reference control}}" 
+                       Aspect="{Binding Aspect,Source={x:Reference control}}" />
+            </Grid>
+        </Grid>
+    </local:ContentButton.Content>
+</local:ContentButton>
