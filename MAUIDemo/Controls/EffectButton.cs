@@ -7,17 +7,17 @@ using System.Windows.Input;
 
 namespace MAUIDemo.Controls
 {
-    public partial class ContentButton : ContentView
+    public partial class EffectButton : ContentView
     {
         public static readonly BindableProperty CommandProperty;
         public static readonly BindableProperty CommandParameterProperty;
 
-        static ContentButton()
+        static EffectButton()
         {
             CommandProperty =
-            BindableProperty.Create(nameof(Command), typeof(ICommand), typeof(ContentButton), null, BindingMode.Default);
+            BindableProperty.Create(nameof(Command), typeof(ICommand), typeof(EffectButton), null, BindingMode.Default);
             CommandParameterProperty =
-           BindableProperty.Create(nameof(CommandParameter), typeof(object), typeof(ContentButton));
+           BindableProperty.Create(nameof(CommandParameter), typeof(object), typeof(EffectButton));
         }
 
         /// <summary>
@@ -55,7 +55,7 @@ namespace MAUIDemo.Controls
 
         private bool isVisuallyPressed;
 
-        public ContentButton()
+        public EffectButton()
         {
             var touchEffect = new TouchRoutingEffect
             {

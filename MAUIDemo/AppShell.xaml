@@ -38,6 +38,18 @@
             <ShellContent ContentTemplate="{DataTemplate view:Demo_Grid}" />
         </Tab>
     </FlyoutItem>
+    <FlyoutItem Title="Demo_BindableLayout"
+                Icon="{FontImage &#xf02b;,Color=Blue, FontFamily=fontawesome, Size=44}">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate view:Demo_BindableLayout}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Demo_MarkupExtension"
+                Icon="{FontImage &#xf02b;,Color=Blue, FontFamily=fontawesome, Size=44}">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate view:Demo_MarkupExtension}" />
+        </Tab>
+    </FlyoutItem>
     <FlyoutItem Title="Demo_HslColor"
                 Icon="{FontImage &#xf02b;,Color=Blue, FontFamily=fontawesome, Size=44}">
         <Tab>

@@ -15,7 +15,7 @@
     <HorizontalStackLayout Margin="10">
         <VerticalStackLayout>
             <BoxView Color="Red" />
-            <BoxView Color="{local:LightColorExtension SrcColor=Red}" />
+            <BoxView Color="{local:LightColor SrcColor=Red}" />
         </VerticalStackLayout>
         <VerticalStackLayout>
             <BoxView Color="Orange" />

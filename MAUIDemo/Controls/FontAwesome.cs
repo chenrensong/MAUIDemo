@@ -39,8 +39,6 @@ namespace MAUIDemo.Controls
             bindable.SetValue(Label.HorizontalTextAlignmentProperty, TextAlignment.Center);
             bindable.SetValue(Label.TextProperty, char.ConvertFromUtf32((int)newValue));
         }
-
-
     }
 
 

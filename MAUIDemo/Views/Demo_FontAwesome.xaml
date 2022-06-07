@@ -9,5 +9,10 @@
                                        Padding="0,3" Margin="4,0,0,0"
                                        TextColor="#59b369"></local:FontAwesome>
 
+        <local:FontAwesome Icon="Adn"
+                                       Padding="0,3" Margin="4,0,0,0"
+                                       TextColor="#59b369"></local:FontAwesome>
+
+
     </StackLayout>
 </ContentPage>

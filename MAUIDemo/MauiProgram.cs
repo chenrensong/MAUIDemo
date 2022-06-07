@@ -16,7 +16,10 @@ public static class MauiProgram
             })
             .ConfigureEffects(x =>
             {
-#if WINDOWS 
+                //#if __ANDROID__ || __IOS__ || WINDOWS || MACCATALYST
+
+                //#endif
+#if WINDOWS
                 x.Add<TouchRoutingEffect, TouchPlatformEffect>();
 #endif
             })

@@ -5,7 +5,7 @@
              xmlns:local="clr-namespace:MAUIDemo.Controls"
              Title="Demo_EffectButton">
     <StackLayout>
-        <local:ContentButton >
+        <local:EffectButton >
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroup x:Name="CommonStates">
                     <VisualState x:Name="Normal">
@@ -20,7 +20,7 @@
                     </VisualState>
                 </VisualStateGroup>
             </VisualStateManager.VisualStateGroups>
-            <local:ContentButton.Content>
+            <local:EffectButton.Content>
                 <!--must set background color-->
                 <Grid BackgroundColor="Transparent">
                     <Border StrokeThickness="4"
@@ -42,7 +42,7 @@
                        FontAttributes="Bold" />
                     </Border>
                 </Grid>
-            </local:ContentButton.Content>
-        </local:ContentButton>
+            </local:EffectButton.Content>
+        </local:EffectButton>
     </StackLayout>
 </ContentPage>

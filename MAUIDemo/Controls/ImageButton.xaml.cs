@@ -1,6 +1,6 @@
 namespace MAUIDemo.Controls;
 
-public partial class ImageButton : ContentButton
+public partial class ImageButton : EffectButton
 {
     public static readonly BindableProperty AspectProperty = BindableProperty.Create(nameof(Aspect),
         typeof(Aspect), typeof(ImageButton));

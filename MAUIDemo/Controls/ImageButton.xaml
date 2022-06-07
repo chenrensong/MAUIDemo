@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<local:ContentButton xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<local:EffectButton xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MAUIDemo.Controls"
              x:Name="control"
              x:Class="MAUIDemo.Controls.ImageButton">
-    <local:ContentButton.Resources>
+    <!--<local:EffectButton.Resources>
         <FileImageSourceConverter x:Key="ImgConverter"/>
-    </local:ContentButton.Resources>
+    </local:EffectButton.Resources>-->
     <VisualStateManager.VisualStateGroups>
         <VisualStateGroup x:Name="CommonStates">
             <VisualState x:Name="Normal">
@@ -21,7 +21,7 @@
             </VisualState>
         </VisualStateGroup>
     </VisualStateManager.VisualStateGroups>
-    <local:ContentButton.Content>
+    <local:EffectButton.Content>
         <Grid x:Name="ButtonBackground" BackgroundColor="Transparent">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto"/>
@@ -39,5 +39,5 @@
                        Aspect="{Binding Aspect,Source={x:Reference control}}" />
             </Grid>
         </Grid>
-    </local:ContentButton.Content>
-</local:ContentButton>
+    </local:EffectButton.Content>
+</local:EffectButton>

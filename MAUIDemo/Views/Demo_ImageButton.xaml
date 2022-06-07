@@ -6,11 +6,11 @@
              Title="Demo_ImageButton">
 
     <VerticalStackLayout>
-        <local:ImageButton NormalImage="aiapps_action_bar_exit_black.png"
-                       PressedImage="aiapps_action_bar_exit_black_pressed.png"/>
+        <local:ImageButton NormalImage="action_bar_exit_black.png"
+                       PressedImage="action_bar_exit_black_pressed.png"/>
 
-        <local:ImageButton NormalImage="aiapps_action_bar_menu_black_normal.png"
-                       PressedImage="aiapps_action_bar_menu_black_pressed.png"/>
+        <local:ImageButton NormalImage="action_bar_menu_black_normal.png"
+                       PressedImage="action_bar_menu_black_pressed.png"/>
 
     </VerticalStackLayout>
 </ContentPage>

@@ -3159,5 +3159,4 @@ namespace MAUIDemo.Controls
         [Description("Meetup"), IconId("meetup"), IconCategory("Brand Icons")]
         Meetup = 0xf2e0,
     }
-
 }
